@@ -22,7 +22,7 @@ HttpSession session = request.getSession();
  session.removeAttribute("username");
  session.invalidate();
 out.println("<h1>Successfully loggedout from Learner's Academy</h1>");
-RequestDispatcher rd= request.getRequestDispatcher("login.jsp");
+RequestDispatcher rd= request.getRequestDispatcher("/Login.html");
 rd.include(request, response);
 }
 protected void doPost(HttpServletRequest request, HttpServletResponse 
